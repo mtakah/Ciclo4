@@ -42,7 +42,7 @@ export const Item = (props) => {
                 <div>
                     <h1>Pedidos do serviço</h1>
                 </div>
-                {status.type == 'error' ? <Alert color="danger"> {status.message} </Alert> : ""}
+                {status.type === 'error' ? <Alert color="danger"> {status.message} </Alert> : ""}
 
                 <Table striped>
                     <thead>
